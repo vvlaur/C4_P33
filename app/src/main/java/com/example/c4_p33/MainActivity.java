@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String word = words.getText().toString();
-                Log.i("word",word );
                 Intent intent = new Intent(MainActivity.this, MainActivity2.class);
                 intent.putExtra("WORD", word );
                 startActivity(intent);
